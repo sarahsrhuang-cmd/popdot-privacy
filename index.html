@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>隐私政策 · 画一画拼豆 PopDot</title>
+  <meta name="description" content="画一画拼豆 PopDot 隐私政策：不注册、不登录、不联网，所有作品仅保存在你的设备本地，我们不收集任何个人数据。">
+  <link rel="icon" href="data:,">
+  <style>
+    :root{
+      --bg:#FFFBF0; --ink:#1B2550; --dim:#6E6A5E; --line:#EAE0C8; --accent:#E8623C;
+    }
+    *{box-sizing:border-box}
+    html{-webkit-text-size-adjust:100%}
+    body{
+      margin:0; padding:0 20px 72px; background:var(--bg); color:var(--ink);
+      font:16px/1.85 -apple-system,BlinkMacSystemFont,"PingFang SC","Helvetica Neue",Arial,sans-serif;
+      letter-spacing:.01em;
+    }
+    .wrap{max-width:680px;margin:0 auto}
+    header{padding:56px 0 32px;border-bottom:1px solid var(--line)}
+    .brand{font-size:30px;font-weight:700;letter-spacing:.02em;margin:0 0 10px}
+    .brand small{display:block;font-size:13px;font-weight:400;letter-spacing:.22em;color:var(--accent);margin-top:10px;text-transform:uppercase}
+    .meta{color:var(--dim);font-size:13px;margin:0}
+    h2{font-size:17px;margin:44px 0 12px;padding-left:12px;border-left:3px solid var(--accent);line-height:1.5}
+    p{margin:0 0 14px}
+    ul{margin:0 0 14px;padding-left:22px}
+    li{margin:0 0 8px}
+    strong{color:#0F1838;font-weight:600}
+    .lead{color:var(--dim);font-size:15px}
+    .note{border:1px solid var(--line);border-radius:12px;padding:16px 18px;margin:20px 0;background:#FFF6DF;font-size:14.5px;color:#4A4636}
+    .note b{color:var(--accent);font-weight:600}
+    table{width:100%;border-collapse:collapse;margin:14px 0 20px;font-size:14.5px}
+    th,td{text-align:left;padding:10px 12px;border-bottom:1px solid var(--line);vertical-align:top}
+    th{color:var(--accent);font-weight:600;width:7.5em;white-space:nowrap}
+    td{color:#4A4636}
+    footer{margin-top:56px;padding-top:24px;border-top:1px solid var(--line);color:var(--dim);font-size:13px}
+    a{color:var(--accent)}
+    @media (max-width:420px){ body{padding:0 16px 56px} .brand{font-size:26px} }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <p class="brand">画一画拼豆<small>PopDot · Privacy Policy</small></p>
+      <p class="meta">生效日期：2026 年 10 月 18 日 &nbsp;·&nbsp; 版本 1.0 &nbsp;·&nbsp; 适用于 iOS / iPadOS 版</p>
+    </header>
+
+    <p class="lead">
+      画一画拼豆是一款拼豆图纸绘制工具。本政策说明我们如何处理你的信息。
+      可以先用一句话说完：<strong>我们不注册、不登录、不联网，也不收集你的任何个人数据。</strong>
+    </p>
+
+    <div class="note">
+      <b>核心承诺：</b>你画的每一幅图纸、每一个色号、每一个作品名称，全部只保存在你自己的设备上。
+      我们既没有服务器，也没有能力读取它们。
+    </div>
+
+    <h2>一、我们不收集任何信息</h2>
+    <p>使用本应用<strong>无需注册、无需登录</strong>，我们<strong>不收集</strong>：</p>
+    <ul>
+      <li>姓名、手机号、邮箱、地址等身份信息；</li>
+      <li>位置信息、通讯录、日历、健康数据；</li>
+      <li>设备标识符（IDFA / IDFV）、广告标识；</li>
+      <li>崩溃日志、使用行为统计、页面停留时长等分析数据；</li>
+      <li>你在应用内绘制的图纸内容。</li>
+    </ul>
+
+    <h2>二、应用不会连接网络</h2>
+    <p>
+      本应用<strong>不包含任何联网请求</strong>：没有远程接口、没有第三方统计 SDK、没有广告 SDK、
+      没有内容分发网络。字体使用系统自带字体，图片与色库全部打包在应用内。
+      因此断网状态下全部功能正常可用。
+    </p>
+    <p>
+      唯一会离开设备的内容，是<strong>你主动导出</strong>的图片 —— 见第五条。
+    </p>
+
+    <h2>三、数据存储在哪里</h2>
+    <table>
+      <tr><th>存储位置</th><td>你的设备<strong>本地存储</strong>（WebView 的 localStorage）。</td></tr>
+      <tr><th>存储内容</th><td>画板尺寸与豆子布局、作品名称、画册中的全部作品、界面偏好（当前工具、网格与色号开关、缩放位置）。</td></tr>
+      <tr><th>是否上传</th><td><strong>否</strong>。不上传、不同步、不备份到任何服务器。</td></tr>
+      <tr><th>是否加密</th><td>依赖 iOS 系统级文件加密与沙盒隔离，其他应用无法读取。</td></tr>
+    </table>
+
+    <h2>四、图片转图纸</h2>
+    <p>
+      当你在应用内选择一张图片转换为拼豆图纸时，图片由<strong>设备本地的 JavaScript 完成读取与色号匹配</strong>，
+      <strong>不会被上传到任何服务器</strong>。应用仅在系统相册选择器中访问你<strong>主动选中的那一张</strong>图片，
+      不会浏览或读取相册中的其他内容。
+    </p>
+
+    <h2>五、图片导出与分享</h2>
+    <p>
+      导出图纸时，应用会在设备本地生成 PNG 图片，然后调起 iOS 系统的分享面板。
+      <strong>保存到哪里、分享给谁，完全由你在系统面板中选择</strong>（存储到「照片」「文件」，或发送给其他应用）。
+      我们不会收到这份图片，也不知道你导出到了哪里。
+    </p>
+
+    <h2>六、第三方服务</h2>
+    <p>
+      本应用<strong>不集成任何第三方 SDK</strong>，包括但不限于统计分析、广告、推送、崩溃收集、社交登录与云存储服务。
+      因此也不存在向第三方共享、转让或公开披露你个人信息的情形。
+    </p>
+
+    <h2>七、你的权利</h2>
+    <ul>
+      <li><strong>删除单个作品</strong>：在「画册」中点击作品右上角的删除按钮，确认后即从设备移除。</li>
+      <li><strong>删除全部数据</strong>：删除应用即会清除全部作品与设置，且<strong>不可恢复</strong>。</li>
+      <li><strong>无需申请导出</strong>：你的数据本来就在你自己的设备上，可随时用系统「文件」应用自行备份。</li>
+    </ul>
+    <div class="note">
+      <b>请注意：</b>由于我们不提供云端备份，删除应用、更换设备或系统清理存储空间后，作品<strong>无法找回</strong>。
+      建议把重要图纸导出成 PNG 保存。
+    </div>
+
+    <h2>八、儿童隐私</h2>
+    <p>
+      本应用不面向 13 周岁以下儿童单独收集任何信息 —— 事实上它不收集任何人的信息。
+      家长可以放心让孩子在无网络环境下使用。
+    </p>
+
+    <h2>九、政策更新</h2>
+    <p>
+      若未来版本新增云同步、账号或统计等功能，我们会先更新本页内容并调整顶部版本号与生效日期，
+      同时在应用内以显著方式提示你。届时你可以选择是否继续使用新增功能。
+    </p>
+
+    <h2>十、联系我们</h2>
+    <p>
+      如对本隐私政策有任何疑问，或希望了解与你数据相关的更多信息，请通过以下方式联系：<br>
+      邮箱：<strong>huangshuran918@icloud.com</strong>
+    </p>
+
+    <footer>
+      画一画拼豆 PopDot · 本页为 App Store 上架所需的隐私政策页面，内容与应用实际行为一致。
+    </footer>
+  </div>
+</body>
+</html>
