@@ -43,7 +43,7 @@
   <div class="wrap">
     <header>
       <p class="brand">画一画拼豆<small>PopDot · Privacy Policy</small></p>
-      <p class="meta">生效日期：2026 年 10 月 29 日 &nbsp;·&nbsp; 版本 2.5 &nbsp;·&nbsp; 适用于 iOS / iPadOS 版</p>
+      <p class="meta">生效日期：2026 年 10 月 29 日 &nbsp;·&nbsp; 版本 2.6 &nbsp;·&nbsp; 适用于 iOS / iPadOS 版</p>
     </header>
 
     <p class="lead">
@@ -76,7 +76,7 @@
       <tr><th>登录方式</th><td>仅支持 <strong>通过 Apple 登录</strong>（Sign in with Apple）。我们不提供手机号注册，也不接入微信等第三方登录。</td></tr>
       <tr><th>拿到的信息</th><td>Apple 返回的一个<strong>稳定的用户标识</strong>。<strong>仅此一项。</strong></td></tr>
       <tr><th>姓名与邮箱</th><td><strong>我们不请求</strong>，因此不会获取你的姓名与邮箱。登录时 Apple 的授权页会显示「将共享：无」。</td></tr>
-      <tr><th>其他</th><td>登录凭据（identity token）仅用于服务端校验身份，校验完即丢弃，不做留存。</td></tr>
+      <tr><th>其他</th><td>登录凭据（identity token）仅用于服务端校验身份，校验完即丢弃，不做留存。注销时会再次请求 Apple 身份确认，将一次性授权码安全传到服务端，换取并立即撤销 Apple 授权；授权码、访问令牌和刷新令牌均不持久保存。</td></tr>
     </table>
     <p>
       我们<strong>不会收集</strong>你的真实姓名、手机号、通讯录、位置、通讯内容或广告标识符（IDFA）。
@@ -139,7 +139,7 @@
       <li><strong>退出登录</strong>：先完成最后一次同步，再结束会话并隐藏账号画板。云端作品及按账号隔离的本机恢复副本保留，重新登录同一账号可恢复；未登录的本地画板独立保留。</li>
       <li><strong>注销账号</strong>：在账号设置中选择「注销账号」并确认后，
         <strong>作品、账号资料、原始 Apple 标识和会话将删除，作品无法恢复</strong>。为防止重复领取，独立保留身份的单向摘要及免费额度已用计数，重新注册不会重置额度。
-        这是应用内的自助操作，不需要联系我们。</li>
+        这是应用内的自助操作，不需要联系我们。注销会撤销本 App 的 Apple 登录授权，但不会自动取消 App Store 订阅；如有自动续费，请先在会员页「管理订阅」中取消。</li>
       <li>你也可以随时通过下方邮箱联系我们，请求删除你的数据。</li>
       <li><strong>统计记录</strong>：统计使用独立的随机安装标识，注销账号不会自动逐条定位并删除这些事件；它们按上述 90 天有效期进入过期清理。若需要协助处理，请通过下方邮箱联系我们。</li>
     </ul>
